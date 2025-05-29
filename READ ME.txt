@@ -1,0 +1,19 @@
+# 🎓 Student Grade Calculator
+
+A simple app to calculate student grades based on input marks. Built using HTML, CSS, and JavaScript.
+
+## 🔧 Features
+- Input marks for 5 subjects
+- Auto-calculate total, average, and grade
+- Instant result display
+
+## 💻 Tech Stack
+- HTML
+- CSS
+- JavaScript
+
+## 🚀 How to Run
+1. Clone the repository
+2. Open index.html in your browser
+
+---

@@ -1,0 +1,35 @@
+document.getElementById("gradeForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const inputs = document.querySelectorAll("input");
+  let total = 0;
+  let valid = true;
+
+  inputs.forEach(input => {
+    const marks = Number(input.value);
+    if (marks < 0 || marks > 100) {
+      valid = false;
+    }
+    total += marks;
+  });
+
+  const result = document.getElementById("result");
+
+  if (!valid) {
+    result.innerHTML = "❌ Please enter marks between 0 and 100.";
+    return;
+  }
+
+  const average = total / inputs.length;
+  let grade = "";
+
+  if (average >= 90) grade = "A";
+  else if (average >= 75) grade = "B";
+  else if (average >= 50) grade = "C";
+  else grade = "F";
+
+  result.innerHTML = `
+    ✅ Total: ${total} <br>
+    📊 Average: ${average.toFixed(2)} <br>
+    🏅 Grade: ${grade}
+  `;
+});

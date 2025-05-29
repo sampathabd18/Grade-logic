@@ -1,0 +1,4 @@
+Average >= 90 → Grade A  
+Average >= 75 → Grade B  
+Average >= 50 → Grade C  
+Average < 50  → Grade F
